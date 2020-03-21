@@ -33,6 +33,8 @@ public class ImageViewTinter {
         /** See {@link ImageViewTinter#setTint}. */
         void setTint(ColorStateList tintList);
 
+        void setTint(int color);
+
         /** See {@link ImageView#onDraw}. */
         void onDraw(Canvas canvas);
     }

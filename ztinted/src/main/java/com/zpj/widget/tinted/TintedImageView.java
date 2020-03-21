@@ -51,6 +51,12 @@ public class TintedImageView extends AppCompatImageView implements ImageViewTint
     }
 
     @Override
+    public void setTint(int color) {
+        savedTintList = ColorStateList.valueOf(color);
+        mTinter.setTint(savedTintList);
+    }
+
+    @Override
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
     }

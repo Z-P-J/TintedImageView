@@ -48,6 +48,11 @@ public class TintedImageButton extends AppCompatImageButton implements ImageView
     }
 
     @Override
+    public void setTint(int color) {
+        mTinter.setTint(ColorStateList.valueOf(color));
+    }
+
+    @Override
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
     }
